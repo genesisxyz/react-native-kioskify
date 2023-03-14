@@ -1,18 +1,21 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-kiosk';
+import { StyleSheet, View, Button } from 'react-native';
+import * as Kiosk from 'react-native-kiosk';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const enable = () => {
+    Kiosk.enable();
+  };
 
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const disable = () => {
+    Kiosk.disable();
+  };
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button title="Enable" onPress={enable} />
+      <Button title="Disable" onPress={disable} />
     </View>
   );
 }

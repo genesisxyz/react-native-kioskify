@@ -17,6 +17,10 @@ const Kiosk = NativeModules.Kiosk
       }
     );
 
+export function init(options?: { android: { customAdminReceiver: string } }) {
+  Kiosk.init(options);
+}
+
 export function enable(): Promise<boolean> {
   return Kiosk.enable();
 }

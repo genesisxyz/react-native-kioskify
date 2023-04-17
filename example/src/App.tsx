@@ -3,6 +3,8 @@ import * as React from 'react';
 import { StyleSheet, View, Button } from 'react-native';
 import * as Kiosk from 'react-native-kiosk';
 
+Kiosk.init();
+
 export default function App() {
   const enable = () => {
     Kiosk.enable();

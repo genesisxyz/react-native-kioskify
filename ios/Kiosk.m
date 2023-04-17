@@ -2,6 +2,8 @@
 
 @interface RCT_EXTERN_MODULE(Kiosk, NSObject)
 
+RCT_EXTERN_METHOD(init:(NSDictionary *)options)
+
 RCT_EXTERN_METHOD(enable:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 

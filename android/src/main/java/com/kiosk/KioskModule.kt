@@ -22,7 +22,7 @@ class KioskModule(reactContext: ReactApplicationContext) :
 
   private val mDevicePolicyManager = reactContext.getSystemService(Context.DEVICE_POLICY_SERVICE) as DevicePolicyManager
 
-  private val mAdminComponentName = MyDeviceAdminReceiver.getComponentName(reactContext)
+  private lateinit var mAdminComponentName: ComponentName
 
   private val isAdmin by lazy { mDevicePolicyManager.isDeviceOwnerApp(reactApplicationContext.packageName) }
 
@@ -32,6 +32,19 @@ class KioskModule(reactContext: ReactApplicationContext) :
 
   override fun getName(): String {
     return NAME
+  }
+
+  @ReactMethod
+  fun init(options: ReadableMap?) {
+    val androidOptions = options?.getMap("android")
+    if (androidOptions != null) {
+      val customAdminReceiver = androidOptions.getString("customAdminReceiver")
+      if (customAdminReceiver != null) {
+        mAdminComponentName = ComponentName(reactApplicationContext.packageName, customAdminReceiver)
+      } else {
+        mAdminComponentName = MyDeviceAdminReceiver.getComponentName(reactApplicationContext)
+      }
+    }
   }
 
   @ReactMethod

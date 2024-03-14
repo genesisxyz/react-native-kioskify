@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Button } from 'react-native';
-import * as Kiosk from 'react-native-kiosk';
+import * as Kiosk from 'react-native-kioskify';
 
 Kiosk.init();
 

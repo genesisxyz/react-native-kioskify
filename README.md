@@ -1,12 +1,12 @@
 <h1 align="center">
-  react-native-kiosk
+  react-native-kioskify
 </h1>
 
 <h4 align="center">Enable Kiosk Mode with a single line of code</h4>
 
 <p align="center">
-  <a href="https://badge.fury.io/js/@genesisxyz%2Freact-native-kiosk.svg">
-    <img src="https://badge.fury.io/js/@genesisxyz%2Freact-native-kiosk.svg"
+  <a href="https://badge.fury.io/js/react-native-kioskify.svg">
+    <img src="https://badge.fury.io/js/react-native-kioskify.svg"
          alt="npm">
   </a>
   <a href="https://www.paypal.me/genesisxyz">
@@ -33,7 +33,7 @@
 ## Installation
 
 ```sh
-npm install @genesisxyz/react-native-kiosk
+npm install react-native-kioskify
 ```
 
 ## How To Use
@@ -139,7 +139,7 @@ And you need to referene the file inside the `AndroidManifest.xml`:
 You need to init the module with the full path of your custom admin receiver:
 
 ```js
-import Kiosk from 'react-native-kiosk';
+import Kiosk from 'react-native-kioskify';
 
 Kiosk.init({
   android: {
@@ -151,7 +151,7 @@ Kiosk.init({
 Change `com.kioskexample` to your bundle id
 
 ```js
-import Kiosk from 'react-native-kiosk';
+import Kiosk from 'react-native-kioskify';
 
 // ...
 

@@ -1,5 +1,5 @@
 {
-  "name": "@genesisxyz/react-native-kiosk",
+  "name": "react-native-kioskify",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -41,16 +41,15 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/genesisxyz/react-native-kiosk",
+  "repository": "https://github.com/genesisxyz/react-native-kioskify",
   "author": "Damiano Collu <colludamiano7@gmail.com> (https://github.com/genesisxyz)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/genesisxyz/react-native-kiosk/issues"
+    "url": "https://github.com/genesisxyz/react-native-kioskify/issues"
   },
-  "homepage": "https://github.com/genesisxyz/react-native-kiosk#readme",
+  "homepage": "https://github.com/genesisxyz/react-native-kioskify#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@evilmartians/lefthook": "^1.2.2",

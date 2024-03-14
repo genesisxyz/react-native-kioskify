@@ -1,20 +1,42 @@
-# react-native-kiosk
+<h1 align="center">
+  react-native-kiosk
+</h1>
 
-Kiosk mode
+<h4 align="center">Enable Kiosk Mode with a single line of code</h4>
+
+<p align="center">
+  <a href="https://badge.fury.io/js/@genesisxyz%2Freact-native-kiosk.svg">
+    <img src="https://badge.fury.io/js/@genesisxyz%2Freact-native-kiosk.svg"
+         alt="npm">
+  </a>
+  <a href="https://www.paypal.me/genesisxyz">
+    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#installation">How To Use</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#license">License</a>
+</p>
+
+<div align="center">
+  <img src="readme.gif" alt="screenshot">
+</div>
+
+## Key Features
+
+- Toggle Kiosk Mode with single line of code
 
 ## Installation
 
 ```sh
-npm install react-native-kiosk
+npm install @genesisxyz/react-native-kiosk
 ```
 
-or
-
-```sh
-yarn add react-native-kiosk
-```
-
-## Usage
+## How To Use
 
 ### Android
 
@@ -93,7 +115,7 @@ Inside `res/xml` you need to create `device_admin_receiver.xml` with this conten
 </device-admin>
 ```
 
-ANd you need to referene the file inside the `AndroidManifest.xml`:
+And you need to referene the file inside the `AndroidManifest.xml`:
 
 ```xml
 <application>
@@ -146,4 +168,6 @@ MIT
 
 ---
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+> [genesisxyz.dev](https://www.genesisxyz.dev) &nbsp;&middot;&nbsp;
+> GitHub [@genesisxyz](https://github.com/genesisxyz) &nbsp;&middot;&nbsp;
+> Twitter [@thedummyxyz](https://twitter.com/thedummyxyz)
